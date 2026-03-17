@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* Navbar */
+
+header{
+background:#020617;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-size:16px;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:15px 0;
+}
+
+.hero img{
+width:250px;
+border-radius:50%;
+border:4px solid #38bdf8;
+}
+
+/* Button */
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* Skills */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:10px 20px;
+border-radius:5px;
+}
+
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-f it,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+border-radius:8px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+.project-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.project-card .content{
+padding:15px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:40px;
+}
+
+
+
+/* Contact Section */
+
+#contact{
+text-align:center;
+padding:80px 10%;
+}
+
+.contact-box{
+max-width:450px;
+margin:auto;
+padding:30px;
+background:linear-gradient(135deg,#38bdf8,#6366f1);
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Inputs */
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:12px;
+margin:12px 0;
+border:none;
+border-radius:8px;
+outline:none;
+font-size:15px;
+}
+
+/* Button */
+
+.contact-box button{
+width:100%;
+padding:12px;
+background:#0f172a;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-box button:hover{
+background:#020617;
+transform:scale(1.05);
+}
+.send-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:30px;
+font-size:16px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+background:linear-gradient(45deg,#ff6a00,#ff0080,#7928ca);
+background-size:200% 200%;
+transition:0.4s;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.send-btn:hover{
+background-position:right center;
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>PrabeshPortfolio</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Prabesh Khadka</span></h1>
+
+<p>
+I am a passionate BScCSIT undergraduate who enjoys learning to build modern and responsive websites.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+<img src="prabeshimg.jpeg" alt="Profile Picture">
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a passionate BScCSIT undergraduate who enjoys learning to build modern and responsive websites.
+I love learning new technologies and improving my development skills.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Graphic Design</div>
+<div class="skill">Python</div>
+<div class="skill">Videography & Photography</div>
+<div class="skill">Teaching</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<img src="Screenshot 2026-03-16 211414.png" alt="Project 1">
+<div class="content">
+<h3>Admission Form</h3>
+<p>A modern admission form created with HTML and CSS.</p>
+</div>
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-03-16 211828.png" alt="Project 2">
+<div class="content">
+<h3>Portfolio Website</h3>
+<p>A responsive portfolio website design.</p>
+</div>
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-03-16 211716.png" alt="Project 3">
+<div class="content">
+<h3>Bio Data</h3>
+<p>A good and readable Bio Data.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: prabesh12khadka@gmail.com</p>
+<p>GitHub: pkp77455-lgtm</p>
+<p>LinkedIn: Prabesh Khadka</p>
+<p>Number: +977 9823550202</p>
+
+</section>
+
+<!--SEND MESSAGE-->
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<form action="https://formsubmit.co/pkp77455@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required><br><br>
+
+<input type="email" name="email" placeholder="Your Email" required><br><br>
+
+<textarea name="message" placeholder="Your Message" rows="3" required></textarea><br><br>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p> Prabesh Khadka  | Student Portfolio</p>
+
+</footer>
+
+</body>
+</html>
